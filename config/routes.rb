@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
   #post 'contact', to: 'contacts#process_form'
   resources :contacts, only: [:new, :create]
+  resources :visitors, only: [:new, :create]
   root to: 'visitors#new'
   
   # Example of regular route:
